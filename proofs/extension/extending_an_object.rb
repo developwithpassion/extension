@@ -41,3 +41,16 @@ heading 'Extending an object with a module' do
     result.prove { is_a? build.example_module }
   end
 end
+
+heading 'Extending an object with a module that it already has' do
+  proof do
+    example = build.example
+
+    example.extension build.example_module
+
+    result = example.extension build.example_module
+
+    desc 'Returns the object without rextending it'
+    result.prove { ! nil? }
+  end
+end
