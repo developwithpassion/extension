@@ -51,6 +51,6 @@ heading 'Extending an object with a module that it already has' do
     result = example.extension build.example_module
 
     desc 'Returns the object without rextending it'
-    result.prove { ! nil? }
+    result.prove { eql?(example) }
   end
 end
