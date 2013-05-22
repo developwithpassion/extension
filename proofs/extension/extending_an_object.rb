@@ -5,7 +5,6 @@ title 'Extending an object'
 module ExtendingAnObjectProofs
   class Example
     include Extension
-
   end
 
   module ExampleModule
@@ -52,5 +51,19 @@ heading 'Extending an object with a module that it already has' do
 
     desc 'Returns the object without rextending it'
     result.prove { eql?(example) }
+  end
+end
+
+heading 'Extending an object using the Extension class method' do
+  example = build.example
+  
+  result = Extension.! example, build.example_module
+
+  proof do
+    desc 'Returns the extended object'
+    result.prove { eql?(example) }
+
+    desc 'Object is extended by the module'
+    result.prove { is_a? build.example_module }
   end
 end
