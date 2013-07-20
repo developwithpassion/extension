@@ -1,11 +1,8 @@
-# extension
+# Extension Library
 
+The `Extension` library encapsulates the use of the `extend` method. This allows for an alternate means to be used in the future that doesn't have the performance issues of extending an object at runtime.
 
-## Status
-
-**Unreleased**
-
-NOTE: Dependencies are linked locally in the development environment via the [`path_gem` library](https://github.com/Sans/path-gem). Dependencies aren't installed by RubyGems, and some dependencies aren't yet published.
+NOTE: Dependencies are linked locally in the development environment via the [`path_gem` library](https://github.com/Sans/path-gem). Development dependencies aren't installed by RubyGems.
 
 ## Usage
 
