@@ -34,4 +34,4 @@ Extension.! obj, SomeModule
 
 ## License
 
-extension is released under the [MIT License](http://www.opensource.org/licenses/MIT).
+extension is released under the [MIT License](https://github.com/Sans/extension/blob/master/MIT-license.txt).
